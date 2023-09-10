@@ -178,6 +178,12 @@ footer ul li a {
   margin-left: -12px;
 }
 
+@media screen and (max-width: 1434px) {
+  .mockup img {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .navbar-nav {
     padding-top: 30px;
@@ -187,6 +193,11 @@ footer ul li a {
   }
   #introduccion {
     width: 100%;
+    padding-top: 30px;
+  }
+  #mockup2 img,
+  #mockup4 img {
+    float: right;
   }
   #mockup4 img {
     margin-top: 0;
@@ -195,7 +206,6 @@ footer ul li a {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
   }
   body.sobre-mi .fondo {
     background-image: none;
