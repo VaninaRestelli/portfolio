@@ -1,0 +1,477 @@
+$colorprimario: #ff8658;
+$colorsecundario: #d9d9d9;
+$coloracento1: #b16cea;
+$coloracento2: #fa5f72;
+$coloracento3: #ffa34d;
+$colorfondo: #161513;
+$tipografiaprimaria: "Poppins", sans-serif;
+$tipografiasecundaria: "Playfair Display", serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $colorfondo;
+
+  font-family: $tipografiaprimaria;
+  color: $colorsecundario;
+  font-size: 20px;
+}
+body.inicio {
+  background-position: top center;
+}
+body.inicio .fondo {
+  background-image: url(../img/bg-inicio.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+body.sobre-mi {
+  background-position: calc(100vw - 900px) -300px;
+  background-repeat: no-repeat;
+}
+body.sobre-mi .fondo {
+  background-image: url(../img/bg-sobremi.png);
+  background-repeat: no-repeat;
+  background-position: calc(100vw - 450px) top;
+}
+body.experiencia {
+  background-position: -500px -200px;
+  background-repeat: no-repeat;
+}
+body.proyectos {
+  background-position: -500px -400px;
+  background-repeat: repeat-y;
+}
+body.contacto {
+  background-position: calc(100vw - 900px) -100px;
+  background-repeat: no-repeat;
+}
+a {
+  color: $colorsecundario;
+}
+body.sobre-mi .descripcion {
+  padding-right: 250px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.navbar-nav a.nav-link {
+  color: $colorsecundario;
+  margin-left: 30px;
+}
+.navbar-nav a.nav-link:hover {
+  color: $colorprimario;
+}
+.navbar-nav a.nav-link.active {
+  color: $colorprimario;
+  font-weight: bold;
+}
+
+#introduccion {
+  padding-top: 200px;
+  width: 762px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 70px;
+}
+body.inicio h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+}
+body.inicio h1 span {
+  font-family: $tipografiasecundaria;
+  font-size: 70px;
+  display: block;
+}
+#introduccion p {
+  padding: 10px 0 0 0;
+}
+
+body.sobre-mi h1 {
+  margin: 20px 0 30px 0;
+}
+
+h2 {
+  font-size: 35;
+  font-weight: 500;
+}
+
+body.sobre-mi h2 {
+  margin-top: 50px;
+}
+
+.certificaciones {
+  border-left: 1px solid $colorsecundario;
+  padding-left: 70px;
+  margin-left: 25px;
+  position: relative;
+}
+.certificaciones .gorrito {
+  position: absolute;
+  left: -10px;
+  background-color: $colorfondo;
+  width: 26px;
+  height: 36px;
+}
+.certificaciones #gorritoArriba {
+  top: 0;
+}
+.certificaciones #gorritoAbajo {
+  bottom: 0;
+  height: 190px;
+}
+.certificado {
+  margin-top: 40px;
+  max-width: 700px;
+}
+.certificado h3 {
+  font-size: 15px;
+  color: rgb(131, 133, 134);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.certificado h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.certificado p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.certificado a {
+  font-size: 20px;
+  color: $colorprimario;
+}
+.certificado a:hover {
+  font-size: 18px;
+  color: $coloracento3;
+}
+
+.boton {
+  display: inline-block;
+  color: $colorsecundario;
+  padding: 13px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: double 1px transparent;
+  background-image: linear-gradient($colorfondo, $colorfondo),
+    linear-gradient(
+      137.48deg,
+      $coloracento1,
+      $coloracento2,
+      $colorprimario,
+      $coloracento3
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.boton span {
+  background-color: $colorfondo;
+  padding: 10px 20px;
+}
+.boton span:hover {
+  background-image: linear-gradient(
+    137.48deg,
+    $coloracento1,
+    $coloracento2,
+    $colorprimario,
+    $coloracento3
+  );
+  color: $colorsecundario;
+}
+
+#error-404 {
+  background-image: url(../img/404.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  min-height: 788px;
+  padding-top: 160px;
+}
+
+#error-404 h1,
+#error-404 h2 {
+  font-family: $tipografiasecundaria;
+  font-weight: bold;
+  font-size: 200px;
+}
+#error-404 h2 {
+  font-size: 100px;
+}
+#error-404 p {
+  font-size: 27px;
+  max-width: 600px;
+}
+
+.proyecto {
+  margin-top: 140px;
+  padding-bottom: 120px;
+}
+.proyecto .texto {
+  font-weight: 300;
+}
+.proyecto .texto h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.proyecto p {
+  font-size: 16px;
+}
+.proyecto .texto h2 img {
+  margin-right: 4px;
+}
+.proyecto .tags {
+  border: 1px solid $colorsecundario;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 13px;
+  padding: 2px 6px;
+  margin-right: 6px;
+}
+.proyecto .texto a {
+  margin-top: 20px;
+}
+.proyecto.invertido .texto {
+  order: 2;
+  text-align: right;
+}
+.proyecto.invertido .imagen {
+  order: 1;
+}
+.proyecto .imagen img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+  filter: grayscale(0%);
+}
+.proyecto .imagen img {
+  transition: all 0.3s;
+  filter: grayscale(100%);
+}
+
+.mockup:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.mockup {
+  transition: all 0.3s;
+}
+
+.contacto .container p {
+  max-width: 1000px;
+  padding-top: 20px;
+}
+
+.contacto form {
+  background-color: #1c1c22;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 100px;
+  padding-right: 500px;
+  background-image: url(../img/bg-contacto.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.contacto label {
+  opacity: 0.6;
+}
+.contacto button {
+  margin-top: 20px;
+}
+.contacto input,
+.contacto textarea {
+  border: 1px solid $colorprimario;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 100px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+footer ul li a {
+  color: $colorprimario;
+  font-size: 30px;
+}
+
+#mockups {
+  margin-top: 140px;
+  overflow: hidden;
+}
+.mockup {
+  padding: 0;
+}
+#mockup2,
+#mockup4 {
+  text-align: right;
+}
+#mockup4 img {
+  margin-top: 120px;
+}
+
+.flecha {
+  font-size: 50px;
+  display: block;
+  margin-left: -12px;
+}
+
+// MEDIAS
+
+@media screen and (max-width: 1434px) {
+  #error-404 h1 {
+    font-size: 12vw;
+  }
+  #error-404 h2 {
+    font-size: 6vw;
+  }
+  #error-404 p {
+    font-size: 2vw;
+    max-width: 50%;
+  }
+  #error-404 {
+    background-size: 60%;
+    background-position: right 60px;
+  }
+  .mockup img {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .proyecto {
+    margin-top: 90px;
+    padding-bottom: 20px;
+  }
+  .proyecto.invertido .texto,
+  .proyecto .texto {
+    text-align: center;
+  }
+  .proyecto .texto {
+    order: 2;
+  }
+  .proyecto .imagen {
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .navbar-nav {
+    padding-top: 30px;
+  }
+  .navbar-nav a.nav-link {
+    margin-left: 0;
+  }
+  #introduccion {
+    width: 100%;
+    padding-top: 30px;
+  }
+  #mockup2 img,
+  #mockup4 img {
+    float: right;
+  }
+  #mockup4 img {
+    margin-top: 0;
+  }
+  .mockup img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  body.sobre-mi .fondo {
+    background-image: none;
+  }
+  body.sobre-mi .descripcion {
+    padding-right: 0;
+  }
+  body.experiencia {
+    background-image: none;
+  }
+  #error-404 {
+    text-align: center;
+    min-height: auto;
+  }
+  #error-404 p {
+    max-width: none;
+  }
+  #error-404 {
+    background-size: 50%;
+    background-position: top center;
+    padding-top: 50vw;
+  }
+  .contacto form {
+    padding: 40px;
+    margin-top: 60px;
+    background-size: 40%;
+    background-position: center right;
+  }
+  .contacto form .mb-3 {
+    text-align: left;
+  }
+  .contacto form button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+  #mockups {
+    margin-top: 80px;
+  }
+  .mockup {
+    margin-bottom: 40px;
+  }
+  .flecha {
+    text-align: left;
+  }
+  .certificaciones {
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .gorrito {
+    display: none;
+  }
+  #error-404 h1 {
+    font-size: 60px;
+  }
+  #error-404 h2 {
+    font-size: 30px;
+  }
+  #error-404 p {
+    font-size: 15px;
+  }
+  #error-404 {
+    background-size: 250px;
+    background-position: top center;
+    padding-top: 320px;
+  }
+}
+@media screen and (max-width: 396px) {
+  body.inicio h1 {
+    line-height: 50px;
+  }
+  body.inicio h1 span {
+    font-size: 50px;
+  }
+  footer {
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
