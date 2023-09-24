@@ -444,9 +444,6 @@ footer ul li a {
   .contacto form .mb-3 {
     text-align: left;
   }
-  .contacto form button {
-    width: 60%;
-  }
 }
 @media screen and (max-width: 767px) {
   body {
