@@ -263,7 +263,7 @@ body.sobre-mi h2 {
 }
 
 .proyecto .imagen img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: all 0.3s;
   filter: grayscale(0%);
 }
