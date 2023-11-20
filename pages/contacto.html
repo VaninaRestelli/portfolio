@@ -49,9 +49,9 @@
             <li class="nav-item">
               <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="experiencia.html">Experiencia</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="proyectos.html">Proyectos</a>
             </li>
@@ -68,20 +68,24 @@
           <a href="../index.html" class="flecha"><i class="bi bi-arrow-left-short"></i></a>
           <h1>Contacto</h1>
           <p>¡Contáctame si quieres saber más sobre mi trabajo o si tienes algún proyecto en el que podamos colaborar juntos! 🚀</p>
-          <form action="">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre y apellido</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido">
+          <form id="formContacto">
+            <div id="divMensaje" class="oculto">¡El mensaje fue enviado con éxito, pronto estaremos en contacto! 😊</div>
+            <div id="divInputs">
+              <input type="hidden" name="contact_number">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y apellido</label>
+                <input name="user_name" type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="user_email" type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea name="message" class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje" required></textarea>
+              </div>
+              <button id="botonEnviar" type="submit" class="boton"><span>Enviar</span></button><span id="spanEnviando" class="oculto">Enviando...</span>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
-            </div>
-            <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
-            </div>
-            <button type="submit" class="boton"><span>Enviar</span></button>
           </form>
       </div>
     </main>
@@ -109,5 +113,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

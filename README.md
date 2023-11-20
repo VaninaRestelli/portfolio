@@ -1,5 +1,5 @@
 # 💫 About Me:
-Soy un diseñadora UX/UI y desarrolladora web apasionada por crear experiencias digitales intuitivas y atractivas que maximizan la usabilidad y la satisfacción del usuario. 🚀💻
+Portfolio UX/UI. 🚀💻
 
 
 ## 🌐 Socials:
